@@ -2,6 +2,19 @@
 
     const tasks = []
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent,
+        });
+
+        render();
+    };
+
+    const removeTask = (taskIndex) => {
+        tasks.splice(index, 1);
+                render();
+    }
+
     const render = () => {
         let htmlString = "";
 
@@ -16,15 +29,16 @@
         }
         document.querySelector(".js-task").innerHTML = htmlString;
 
-    };
+        const removeButtons = document.querySelectorAll(".js-remove");
 
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index)
+            });
         });
-
-        render();
     };
+
+   
 
 const onForSubmit =  (event) => {
     event.preventDefault();
