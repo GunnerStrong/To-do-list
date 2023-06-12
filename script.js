@@ -50,7 +50,7 @@ newTaskInput.focus();
             htmlString += `
     <li class="list__items">
     <button class="list__button--done js-done">${task.done ? "✔" : ""}</button>
-    <span class="${task.done ? "list__text--done" : ""}"> ${task.content} </span>
+    <span class="list__text ${task.done ? "list__text--done" : ""}"> ${task.content} </span>
     <button class="list__button--remove js-remove">🗑</button>
     </li>
     `;
