@@ -8,7 +8,7 @@
 HTML, CSS, JS, Grid and Flexbox
 
 
-## Link ot the website:
+## Link to the website:
 https://gunnerstrong.github.io/To-do-list/
 
 
