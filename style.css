@@ -11,6 +11,7 @@ html {
 .body {
     background-color: rgba(234, 233, 233, 0.941);
     font-family: 'Montserrat', sans-serif;
+    word-break: break-word;
 }
 
 .header {

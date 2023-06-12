@@ -39,6 +39,8 @@
 }
 
 .section__form-button {
+    cursor: pointer;
+    /* padding: 10px; */
     margin: 10px;
     background-color: teal;
     color: white;
