@@ -29,6 +29,7 @@
 .section__form-input {
     padding: 10px;
     width: 350px;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
