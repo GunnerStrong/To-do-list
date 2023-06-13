@@ -8,9 +8,7 @@
         });
 
         render();
-        const newTaskInput = document.querySelector(".js-newTask");
-        newTaskInput.value = "";
-        newTaskInput.focus();
+       
 
     };
 
@@ -74,6 +72,9 @@
         }
 
         addNewTask(newTaskContent);
+        const newTaskInput = document.querySelector(".js-newTask");
+        newTaskInput.value = "";
+        newTaskInput.focus();
     }
 
     const init = () => {
